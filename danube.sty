@@ -1,0 +1,295 @@
+%%%%%%%%%%%%%%%%%% styl pro zahlavi jednotlivych clanku
+\usepackage{graphicx}
+\usepackage[pdftex]{geometry}
+\geometry{papersize={162mm,229mm} }
+
+%%% znaky
+%   `` &#65533; dvojitá levá anglická uvozovka (&#65533;) 
+%   " &#65533; dvojitá pravá anglická uvozovka (&#65533;) 
+%   ` &#65533; jednoduchá levá anglická uvozovka (&#65533;) 
+%   ' &#65533; jednoduchá pravá anglická uvozovka (&#65533;) 
+
+\input{danube.inc}
+
+%%%% zahlavi
+\def\ps@plain{\def\@oddfoot{} \def\@evenfoot{} \def\@evenhead{} \def\@oddhead{}}
+
+%%% GUIDELINES
+\def\ps@guidelines{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{}%
+    \def\@oddhead{\parbox[t]{.4\textwidth}{\itshape\small Submission Guidelines for Authors}}} %% licha strana
+
+
+%%% TIRAZ 
+% tiraz pro cislo 03/2014
+\def\ps@issueiiixiv{\let\@mkboth\markboth
+    \def\@oddfoot{\underline{\parbox[t]{\textwidth}{Issue 3 (2014) is published on the 30\raisebox{.8ex}{\scriptsize th} September 2014.}}}%
+    \def\@evenfoot{}%
+    \def\@evenhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries DANUBE: Law and Economics Review, 5\;(3)}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft CONTENTS}}}% suda strana
+    \def\@oddhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries  DANUBE: Law and Economics Review\vrule width 0pt depth 1.455pt}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft ISSN 1804-6746}}}} %% licha strana
+
+% tiraz pro cislo 02/2014
+\def\ps@issueiixiv{\let\@mkboth\markboth
+    \def\@oddfoot{\underline{\parbox[t]{\textwidth}{Issue 2 (2014) is published on the 30\raisebox{.8ex}{\scriptsize th} June 2014.}}}%
+    \def\@evenfoot{}%
+    \def\@evenhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries DANUBE: Law and Economics Review, 5\;(2)}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft CONTENTS}}}% suda strana
+    \def\@oddhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries  DANUBE: Law and Economics Review\vrule width 0pt depth 1.455pt}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft ISSN 1804-6746}}}} %% licha strana
+
+% tiraz pro cislo 01/2014
+\def\ps@issueixiv{\let\@mkboth\markboth
+    \def\@oddfoot{\underline{\parbox[t]{\textwidth}{Issue 1 (2014) is published on the 31\raisebox{.8ex}{\scriptsize st} March 2014.}}}%
+    \def\@evenfoot{}%
+    \def\@evenhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries DANUBE: Law and Economics Review, 5\;(1)}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft CONTENTS}}}% suda strana
+    \def\@oddhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries  DANUBE: Law and Economics Review\vrule width 0pt depth 1.455pt}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft ISSN 1804-6746}}}} %% licha strana
+
+
+% tiraz pro cislo 04/2013
+\def\ps@issueivxiii{\let\@mkboth\markboth
+    \def\@oddfoot{\underline{\parbox[t]{\textwidth}{Issue 4 (2013) is published on the 31\raisebox{.8ex}{\scriptsize st} December 2013.}}}%
+    \def\@evenfoot{}%
+    \def\@evenhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries DANUBE: Law and Economics Review, 4\;(4)}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft CONTENTS}}}% suda strana
+    \def\@oddhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries  DANUBE: Law and Economics Review\vrule width 0pt depth 1.455pt}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft ISSN 1804-6746}}}} %% licha strana
+
+% tiraz pro cislo 03/2013
+\def\ps@issueiiixiii{\let\@mkboth\markboth
+    \def\@oddfoot{\underline{\parbox[t]{\textwidth}{Issue 3 (2013) is published on the 30\raisebox{.8ex}{\scriptsize th} September 2013.}}}%
+    \def\@evenfoot{}%
+    \def\@evenhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries DANUBE: Law and Economics Review, 4\;(3)}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft CONTENTS}}}% suda strana
+    \def\@oddhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries  DANUBE: Law and Economics Review\vrule width 0pt depth 1.455pt}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft ISSN 1804-6746}}}} %% licha strana
+
+
+% tiraz pro cislo 02/2013
+\def\ps@issueiixiii{\let\@mkboth\markboth
+    \def\@oddfoot{\underline{\parbox[t]{\textwidth}{Issue 2 (2013) is published on the 30\raisebox{.8ex}{\scriptsize th} June 2013.}}}%
+    \def\@evenfoot{}%
+    \def\@evenhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries DANUBE: Law and Economics Review, 4\;(2)}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft CONTENTS}}}% suda strana
+    \def\@oddhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries  DANUBE: Law and Economics Review\vrule width 0pt depth 1.455pt}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft ISSN 1804-6746}}}} %% licha strana
+
+% tiraz pro cislo 01/2013
+\def\ps@issueixiii{\let\@mkboth\markboth
+    \def\@oddfoot{\underline{\parbox[t]{\textwidth}{Issue 1 (2013) is published on the 31\raisebox{.8ex}{\scriptsize st} March 2013.}}}%
+    \def\@evenfoot{}%
+    \def\@evenhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries DANUBE: Law and Economics Review, 4\;(1)}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft CONTENTS}}}% suda strana
+    \def\@oddhead{\underline{\parbox[t]{.7\textwidth}{\itshape\small\bfseries  DANUBE: Law and Economics Review}\hfill\parbox[t]{0.3\textwidth}{\bfseries\small\raggedleft ISSN 1804-6746}}}} %% licha strana
+
+
+%%% JEDNOTLIVE CLANKY 
+
+%%%%%% Danube 04/2014
+\def\ps@scott{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Author: Danny Yee, http://dannyreviews.com}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@funtadiscounts{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.8\textwidth}{\itshape\small\raggedleft Rastislav Funta: Discounts and their Effects -- Economic and Legal Approach}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(4), 201--212\\DOI: 10.2478/danb-2014-0011}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@mako{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.9\textwidth}{\itshape\small\raggedleft Zuzana Machová, Igor Kotlán: Expenditures on Collective and Individual Services: Discussion on the Classification of Government Expenditures}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(4), 201--212\\DOI: 10.2478/danb-2014-0011}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@sever{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.8\textwidth}{\itshape\small\raggedleft Tina Sever, Iztok Rakar, Polonca Kovaè: Protecting Human Rights Through Fundamental Principles of Administrative Procedures in Eastern Europe}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(4), 201--212\\DOI: 10.2478/danb-2014-0011}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+
+%%%%%% Danube 03/2014
+\def\ps@coady{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Author: Danny Yee, http://dannyreviews.com}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@usiak{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.7\textwidth}{\itshape\small\raggedleft Jaroslav U¹iak, ¥ubica Saktorová: The International Court of Justice and the Legality of UN Security Council Resolutions}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(3), 201--212\\DOI: 10.2478/danb-2014-0011}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@milich{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.7\textwidth}{\itshape\small\raggedleft Franti¹ek Milichovský, Jiøí Koleòák: Methodology for the Selection of Compensation Trade Tools in SMEs}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(3), 213--224\\DOI: 10.2478/danb-2014-0012}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@lapinska{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.75\textwidth}{\itshape\small\raggedleft Justyna £apiñska: Determinants of Intra-Industry Trade in Agricultural and Food Products between Poland and EU Countries}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(3), 159--172\\DOI: 10.2478/danb-2014-0009}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@zinecker{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.85\textwidth}{\itshape\small\raggedleft Marek Zinecker, Zdeòka Koneèná: German Language Proficiency among Students of Business and Management in the Czech Republic and its Perception}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(3), 173--200\\DOI: 10.2478/danb-2014-0010}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+
+
+%%%%%% Danube 02/2014
+\def\ps@unionlaw{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Alena Paulièková, Karel Engli¹ College in Brno}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@kantorowicz{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Jaros³aw Kantorowicz: Judges as Fiscal Activists: Can Constitutional Review Shape Public Finance?}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(2), 79--104\\DOI: 10.2478/danb-2014-0005}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@moravcik{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Oto Moravèík \& Jarmila Vidová: Socially Marginalized Environments, Unemployment and Media}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(2), 127--141\\DOI: 10.2478/danb-2014-0007}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@bacs{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.85\textwidth}{\itshape\small\raggedleft Éva Bába Ms Bács: Challenges to Professional Football Companies and their Answers with Particular Regard to Organisational Changes}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(2), 105--125\\DOI: 10.2478/danb-2014-0006}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@hornungova{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.85\textwidth}{\itshape\small\raggedleft Jana Hornungová: Development of Concepts and Models of Performance Evaluation from the 19\hskip.2ex\numend{th} Century to the Present}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(2), 143--154\\DOI: 10.2478/danb-2014-0008}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+
+%%%%%% Danube 01/2014
+\def\ps@nordhaus{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Author: Danny Yee, http://dannyreviews.com}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@omercevic{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.75\textwidth}{\itshape\small\raggedleft Edo Omerèeviæ: Introducing Good Money: Legal Tender Problem or Question of Structured Approach?}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(1), 53--64\\DOI: 10.2478/danb-2014-0003}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+    
+\def\ps@hruskovic{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.75\textwidth}{\itshape\small\raggedleft Ivan Hru¹koviè: Legal Aspects of the Association of Overseas Countries and Territories with the European Union}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(1), 65--75\\DOI: 10.2478/danb-2014-0004}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+    
+\def\ps@bartha{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.85\textwidth}{\itshape\small\raggedleft Zoltán Bartha, Andrea S.\;Gubik: Characteristics of the Large Corporation-Based, Bureaucratic Model Among OECD Countries -- An FOI Model Analysis}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(1), 1--20\\DOI: 10.2478/danb-2014-0001}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana    
+    
+\def\ps@havlik{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.62\textwidth}{\itshape\small\raggedleft Peter Havlik: Vilnius Eastern Partnership Summit: Milestone in EU-Russia Relations -- Not just for Ukraine}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 5\;(1), 21--51\\DOI: 10.2478/danb-2014-0002}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana    
+
+%%%%%% Danube 04/2013
+\def\ps@evans{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Author: Danny Yee, http://dannyreviews.com}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@repkova{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.75\textwidth}{\itshape\small\raggedleft Iveta Øepková: Estimation of Banking Efficiency in the Czech Republic: Dynamic Data Envelopment Analysis}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(4), 261--275\\DOI: 10.2478/danb-2013-0014}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@sipikal{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.75\textwidth}{\itshape\small\raggedleft Miroslav ©ipikal: Tailoring Innovation Policies to Sectors\\and Regions -- The Case of Slovakia}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(4), 277--291\\DOI: 10.2478/danb-2013-0015}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@siskova{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.8\textwidth}{\itshape\small\raggedleft Nadì¾da ©i¹ková: The Impact of the Eurozone's Crisis on the Institutional Framework and National Law of Member States -- Some Considerations}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(4), 293--300\\DOI: 10.2478/danb-2013-0016}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@theurl{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.8\textwidth}{\itshape\small\raggedleft Martin Gächter, Peter Schwazer and Engelbert Theurl: Entry into the Physicians' Market: Empirical Evidence from the Outpatient Sector in Austria}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(4), 245--260\\DOI: 10.2478/danb-2013-0013}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+%%%%%% Danube 03/2013
+\def\ps@cooper{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Author: Danny Yee, http://dannyreviews.com}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@paulovicsanimals{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.6\textwidth}{\itshape\small\raggedleft Anita Paulovics: Legal Rules on the Protection of Animals in Hungary}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(3), 219--229\\DOI: 10.2478/danb-2013-0011}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@dudova{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.55\textwidth}{\itshape\small\raggedleft Iveta Dudová: Social Investment as a New Paradigm of Social Policy}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(3), 231--242\\DOI: 10.2478/danb-2013-0012}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@nagyvalo{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.85\textwidth}{\itshape\small\raggedleft Zoltán Imre Nagy \& Viktor Való: The Lawful Execution of Employer Rights Is an Important Subsystem of Corporate Governance (A Labour Case Study)}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(3), 201--217\\DOI: 10.2478/danb-2013-0010}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@stavkova{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.55\textwidth}{\itshape\small\raggedleft Naïa Birèiaková, Jana Stávková, Veronika Anto¹ová: Income (In)Justice in the Czech Republic}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(3), 185--199\\DOI: 10.2478/danb-2013-0009}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+
+%%%%%% Danube 02/2013
+\def\ps@bowles{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Author: Danny Yee, http://dannyreviews.com}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@simonovitstax{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.55\textwidth}{\itshape\small\raggedleft András Simonovits: Does Higher Tax Morale Imply Higher Optimal Labor Income Tax Rate?}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(2), 97--114\\DOI: 10.2478/danb-2013-0005}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@machovamethod{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.55\textwidth}{\itshape\small\raggedleft Zuzana Machová \& Igor Kotlán: World Tax Index: New Methodology for OECD Countries, 2000--2012}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(2), 165--179\\DOI: 10.2478/danb-2013-0008}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@schovankovajob{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.8\textwidth}{\itshape\small\raggedleft Soòa Schovánková: Determinants of the Spatial Distribution of Foreign Employees on Different Skill Job Positions: The Case of the Czech Republic}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(2), 115--139\\DOI: 10.2478/danb-2013-0006}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@darvas{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.7\textwidth}{\itshape\small\raggedleft Zsolt Darvas \& Guntram B.\,Wolff: Should Non-Euro Area Countries Join the Single Supervisory Mechanism?}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(2), 141--163\\DOI: 10.2478/danb-2013-0007}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+
+%%%%%% Danube 01/2013
+\def\ps@capello{\let\@mkboth\markboth
+      \def\@oddfoot{}\def\@evenfoot{}%
+      \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.65\textwidth}{\itshape\small\raggedleft Author: Wolfgang Polasek}}% suda strana
+      %\def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}}
+      \def\@oddhead{{\itshape\small Book Review}\hfil{\itshape\small\thepage}}} %% licha strana
+
+\def\ps@kohalmi{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.55\textwidth}{\itshape\small\raggedleft László K\H ohalmi: The Never-Ending Fight: Economic and Political Corruption in Hungary}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(1), 67--82\\DOI: 10.2478/danb-2013-0003}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@polasekfdi{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.7\textwidth}{\itshape\small\raggedleft Wolfgang Polasek \& Richard Sellner: Does Globalization Affect Regional Growth? Evidence for NUTS-2  Regions in EU-27}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(1), 23--65\\DOI: 10.2478/danb-2013-0002}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+
+\def\ps@huberimpact{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.8\textwidth}{\itshape\small\raggedleft Peter Huber \& Julia Bock-Schappelwein: The Impact of Migration Policy on Migrants' Education Structure: Evidence from Austrian Policy Reform}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(1), 1--21\\DOI: 10.2478/danb-2013-0001}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana
+
+\def\ps@janickova{\let\@mkboth\markboth
+    \def\@oddfoot{}\def\@evenfoot{}%
+    \def\@evenhead{\parbox[t]{.1\textwidth}{\itshape\small\thepage}\hfil\parbox[t]{0.75\textwidth}{\itshape\small\raggedleft Lenka Janíèková: Effective Tax Rates in the Moravian-Silesian Region}}% suda strana
+    \def\@oddhead{\parbox[t]{.65\textwidth}{\itshape\small  DANUBE: Law and Economics Review, 4\;(1), 83--92\\DOI: 10.2478/danb-2013-0004}\hfil\parbox[t]{.1\textwidth}{\raggedleft\itshape\small\thepage}}} %% licha strana

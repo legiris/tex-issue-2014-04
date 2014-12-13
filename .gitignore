@@ -1,0 +1,4 @@
+articles-word
+*.aux
+*.gz
+*.log
