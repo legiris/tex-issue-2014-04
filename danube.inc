@@ -34,7 +34,6 @@
 
 \def\mensi{\@setsize\mensi{8pt}\viipt\@viipt}
 
-
 % ZAHLAVI
 \def\ps@plain{\def\@oddfoot{} \def\@evenfoot{} \def\@evenhead{} \def\@oddhead{}}
 
