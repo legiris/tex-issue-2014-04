@@ -41,6 +41,8 @@
 
 \def\nuluj{\setcounter{section}{0}\setcounter{footnote}{0}\setlength{\tabcolsep}{6pt}\setcounter{equation}{0}}
 
+\def\tirazodkaz#1{\def\tiraz{#1}}
+\def\tiraztyp#1{\def\typ{#1}}
 
 % UVODNI STRANA -- makra
 % autor
